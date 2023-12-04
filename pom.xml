@@ -30,7 +30,7 @@
         <commons-text.version>1.10.0</commons-text.version>
         <darklaf.version>3.0.2</darklaf.version>
         <darklaf-extensions-rsta.version>0.4.1</darklaf-extensions-rsta.version>
-        <decompiler-fernflower.version>6.1.2.Final</decompiler-fernflower.version>
+        <decompiler-fernflower.version>6.3.4.Final</decompiler-fernflower.version>
         <dex2jar.version>v59</dex2jar.version>
         <fernflower.version>e0d44f4</fernflower.version>
         <gson.version>2.10.1</gson.version>
@@ -461,8 +461,7 @@
                         </filter>
                     </filters>
                     <transformers>
-                        <transformer
-                                implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                             <mainClass>the.bytecode.club.bytecodeviewer.BytecodeViewer</mainClass>
                             <manifestEntries>
                                 <Implementation-Version>${project.version}</Implementation-Version>
@@ -470,8 +469,7 @@
                                 <X-Compile-Target-JDK>${maven.compiler.target}</X-Compile-Target-JDK>
                             </manifestEntries>
                         </transformer>
-                        <transformer
-                                implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                     </transformers>
                 </configuration>
             </plugin>
